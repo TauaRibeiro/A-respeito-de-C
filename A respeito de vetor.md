@@ -11,13 +11,13 @@
 + Para declarar um vetor em C, você precisa especificar o tipo de dado que vai ser armazenado, o nome do vetor, e entre colchetes '[]' o número de elementos que irá ser armazenado nele.
 
 **Ex1:**
-```VsCode
+```ruby
 int numeros[5]; /*Declaração do vetor 'numeros' que é do tipo inteiro, podendo armazenar 5 elementos;*/
 ```
 + Além disso é possível inicializarmos um vetor logo quando fazemos sua declaração, para isso é preciso colocar um sinal de igual '=' e entre chaves '{}' colocar os elementos com os quais deseja inicializa-lo separados por vírgula ','.
 
 **Ex2:**
-```VsCode
+```ruby
 int numeros[] = {1, 2, 3, 4, 5}; /*Declaração do vetor números do tipo inteiro com os valores 1, 2, 3, 4 e 5*/
 ```
 + Note que não foi necessário colocar o número de elementos entre os colchetes, isso ocorre porque quando utilizarmos esse método, o número elementos no vetor é determinado pela quantidade de elementos nas chaves.
@@ -31,7 +31,7 @@ int numeros[] = {1, 2, 3, 4, 5}; /*Declaração do vetor números do tipo inteir
 + Agora, digamos que queremos acessar o 4° elemento do vetor e atribuir ele a uma variável chamada num, para fazer isso podemos fazer da seguinte forma:
 
 **Ex3:**
-```VsCode
+```ruby
 int numeros[] = {1, 2, 3, 4, 5};//Declaração e inicialização do vetor. 
 int num = numeros[3];/*Declaração da variável 'num', que é inicializada com o elemento de índice 3 do vetor 'numeros'.*/
 ```
@@ -40,14 +40,14 @@ int num = numeros[3];/*Declaração da variável 'num', que é inicializada com 
 + E da mesma forma que podemos atribuir a uma variável o elemento de um vetor, podemos alterar ou atribuir um valor ao vetor.
 
 **Ex4:**
-```VsCode
+```ruby
 int numeros[5]; //Declaração de um vetor de 5 elementos;
 numeros[2] = 7;/*Atribuição do valor 7 ao 3° elemento do vetor 'numeros'*/
 ```
 + Caso queira preencher o vetor com os dados digitados pelo usuário, pode-se utilizar um laço de repetição 'for' para cada índice do vetor um elemento que foi digitado pelo usuário, veja o exemplo abaixo:
 
 **Ex5:**
-```VsCode
+```ruby
 #include <stdio.h>//Biblioteca para utilizar os comandos printf e scanf.
 #include <locale.h>//Biblioteca que permitirá utilizar caracteres da língua portuguesa.
 
@@ -80,7 +80,7 @@ int main(){
 
 
 **Resolução do problema**
-```VsCode
+```ruby
 #include <stdio.h>//Biblioteca para utilizar o pritnf e scanf para leitura de dados;
 #include <stdlib.h>//Biblioteca para utilizar o system para utilizar o comando do prompt 'cls';
 #include <locale.h>//Biblioteca para utilizar os caracteres da língua protuguesa;

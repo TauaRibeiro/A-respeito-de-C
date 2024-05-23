@@ -79,7 +79,7 @@ int main(){
 
 
 
-**Resolução do problema**
+## 4. Resolução do problema
 ```C
 #include <stdio.h>//Biblioteca para utilizar o pritnf e scanf para leitura de dados;
 #include <stdlib.h>//Biblioteca para utilizar o system para utilizar o comando do prompt 'cls';

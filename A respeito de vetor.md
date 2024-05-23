@@ -1,6 +1,6 @@
 ## 1. O que é?
 
-+ Também chamado de array, um vetor é uma coleção de elementos do mesmo tipo que podem ser acessados através de um índice que representa a sua posição. Eles são muitos úteis para armazenar dados, pois eles eliminam a necessidade de criar múltiplas variáveis para os armazenamento.**
++ Também chamado de array, um vetor é uma coleção de elementos do mesmo tipo que podem ser acessados através de um índice que representa a sua posição. Eles são muitos úteis para armazenar dados, pois eles eliminam a necessidade de criar múltiplas variáveis para os armazenamento.
 
 + Uma forma mais fácil de visualizar a utilidade deles é com o seguinte problema:
 

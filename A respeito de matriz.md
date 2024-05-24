@@ -79,7 +79,17 @@ int main(){
        }
       
        media[i] /= 3;
+       system("cls");
+   }
+
+   for(int i = 0; i < 5; i++){
+
+       printf("NOME-> %s;\n", nome[i]);
+       printf("NOTAS-> %.2f|%.2f|%.2f;\n", notas[i][0], notas[i][1], notas[i][2]);
+       printf("MÉDIA-> %.2f;\n;", media[i]);
+       printf("------------------------------\n");
    }
    
    
 }
+```

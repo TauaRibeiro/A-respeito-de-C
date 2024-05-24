@@ -32,13 +32,15 @@ num = numeros[0][2];//Atribuição à variável 'num' o elemento da 1° linha da
 + Uma das formas de preencher uma matriz com elementos digitados pelo usuário é utilizado 2 laços de repetição 'for' onde um laço será para as linhas e outro para as colunas;
 ```C
 #include <stdio.h>//Biblioteca para utilizar as funções scanf e printf;
-#include <locale.h>//Biblioteca para
+#include <locale.h>//Biblioteca para utilizar a  função setlocale.
 
 int main(){
+    //Configura a localização para permitir a utilização de caracteres da língua portuguesa.
     setlocale(LC_ALL, "PORTUGUESE");
     
-	int numeros[3][3];
-	
+	int numeros[3][3];//Declaração da matriz numeros com 3 linhas e 3 colunas;
+	//Laços de repetição 'for' responsáveis por acessar os elementos da matriz.
+//O primeiro laço é para as linhas e o segundo para as colunadas.
 	for(int l = 0;  l < 3; l++){
 		for(int c = 0; c < 3; c++){
 			printf("Digite um número para %d° linha e %d° coluna: ", l+1, c+1);
@@ -48,3 +50,36 @@ int main(){
     return 0;
 }
 ```
+
++ Agora que você viu como funciona matrizes, é recomendado que tente desenvolver um código que resolva o problema apresentado anteriormento no início.
++ Após isso, você pode ver e comparar o seu código com o da resolução para poder verificar o que pode ficar e/ou o que ficou melhor no  código.
+
+## 5. Resolução do problema
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#include <licale.h>
+
+int main(){
+
+   setlocale(LC_ALL, "Portuguese");
+
+   char nome[5][50];
+   float notas[5][3], media[5] = {0};
+
+   for(int i = 0; i < 5; i++){
+       printf("Digite o nome do %d° aluno: ",            i+1);
+       scanf(" %49[\n]", aluno);
+
+       for(int x = 0; x < 3; x++){
+           printf("Digite a %d° nota: ", x+1);
+           scanf("%f", &notas[i][x]);
+         
+           media[i] += notas[i][x];
+       }
+      
+       media[i] /= 3;
+   }
+   
+   
+}

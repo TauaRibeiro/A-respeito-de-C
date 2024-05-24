@@ -40,7 +40,7 @@ int main(){
     
 	int numeros[3][3];//Declaração da matriz numeros com 3 linhas e 3 colunas;
 	//Laços de repetição 'for' responsáveis por acessar os elementos da matriz.
-//O primeiro laço é para as linhas e o segundo para as colunadas.
+	//O primeiro laço é para as linhas e o segundo para as colunadas.
 	for(int l = 0;  l < 3; l++){
 		for(int c = 0; c < 3; c++){
 			printf("Digite um número para %d° linha e %d° coluna: ", l+1, c+1);

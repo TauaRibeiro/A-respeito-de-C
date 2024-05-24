@@ -56,40 +56,42 @@ int main(){
 
 ## 5. Resolução do problema
 ```C
-#include <stdio.h>
-#include <stdlib.h>
-#include <licale.h>
+#include <stdio.h>//Biblioteca para usar as funções printf e scanf.
+#include <stdlib.h>//Biblioteca para usar a função system.
+#include <locale.h>//Biblioteca para usar a função setlocale.
 
 int main(){
+    //Configura a localização para utilizar os caracteres da língua portuguesa.
+    setlocale(LC_ALL, "Portuguese");
 
-   setlocale(LC_ALL, "Portuguese");
-
-   char nome[5][50];
-   float notas[5][3], media[5] = {0};
-
-   for(int i = 0; i < 5; i++){
-       printf("Digite o nome do %d° aluno: ",            i+1);
-       scanf(" %49[\n]", aluno);
-
-       for(int x = 0; x < 3; x++){
-           printf("Digite a %d° nota: ", x+1);
-           scanf("%f", &notas[i][x]);
+    char nome[5][50];//Declaração do vetor nome.
+    float notas[5][3], media[5] = {0};//Declaração da matriz notas, media.
+    //Laços de repetição para preencher o vetor nome, média, e matriz notas.
+    for(int i = 0; i < 5; i++){
+        //Leitura do nome
+        printf("Digite o nome do %d° aluno: ", i+1);
+        scanf(" %49[^\n]", nome[i]);
+        //Leitura das notas e soma delas ao vetor médias.
+        for(int x = 0; x < 3; x++){
+            printf("Digite a %d° nota: ", x+1);
+            scanf("%f", &notas[i][x]);
          
-           media[i] += notas[i][x];
-       }
-      
-       media[i] /= 3;
-       system("cls");
-   }
+            media[i] += notas[i][x];
+        }
+        //Calculo da média.
+        media[i] /= 3;
+        //Comando para limpar a tela.
+        system("cls");
+    }
+    //Laço de repetição responsável por mostrar as informações de cada aluno; 
+    for(int i = 0; i < 5; i++){
 
-   for(int i = 0; i < 5; i++){
-
-       printf("NOME-> %s;\n", nome[i]);
-       printf("NOTAS-> %.2f|%.2f|%.2f;\n", notas[i][0], notas[i][1], notas[i][2]);
-       printf("MÉDIA-> %.2f;\n;", media[i]);
-       printf("------------------------------\n");
-   }
+        printf("NOME-> %s;\n", nome[i]);
+        printf("NOTAS-> %.2f|%.2f|%.2f;\n", notas[i][0], notas[i][1], notas[i][2]);
+        printf("MÉDIA-> %.2f;\n", media[i]);
+        printf("------------------------------\n");
+    }
    
-   
+    return 1;
 }
 ```
